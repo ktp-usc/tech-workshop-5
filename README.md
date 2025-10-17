@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# KTP Tech Workshop #5 – Shadcn/UI Components
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This workshop introduces **Shadcn/UI**, a modern component library built on **Tailwind CSS** and **Radix UI**. Attendees learn how to install, style, and customize ready-to-use components such as buttons, dialogs, inputs, and carousels — all while maintaining accessibility and a clean, composable structure. The session concludes with open working time for hands-on experimentation and questions.
+
+## Slides
+
+* [Workshop #5 Slides](Tech%20workshop%205.pdf)
+
+## URL
+
+* Coming soon (will be linked once the workshop demo app is deployed)
+
+---
+
+## Prerequisites
+
+* Node.js and npm
+* React + Next.js project setup
+* Code editor (WebStorm or VS Code recommended)
+* Internet connection to access the Shadcn CLI
+
+---
+
+## Shadcn/UI
+
+Shadcn/UI provides a growing library of accessible, themeable React components styled with Tailwind.
+Each component can be edited and customized to fit your design system.
+
+### Why Shadcn/UI?
+
+* Fully customizable Tailwind styling
+* Accessible components powered by **Radix UI**
+* Beginner-friendly setup and clear documentation
+* Works seamlessly with **TypeScript**
+
+### Install
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npx shadcn@latest init
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then add your desired components:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npx shadcn@latest add button carousel aspect-ratio dialog input label sonner
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Docs:** [https://ui.shadcn.com/docs/components](https://ui.shadcn.com/docs/components)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Example: Sonner (Toast Notifications)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The **Sonner** component provides an easy way to show important messages, such as success or error alerts.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Features
 
-## Deploy on Vercel
+* Lightweight and simple to use
+* Several preconfigured variants:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+  * Default
+  * Success
+  * Info
+  * Warning
+  * Error
+  * Promise (async feedback)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Why Use It?
+
+Sonner is ideal for showing user feedback in form submissions, data loading, or API operations without disrupting the UI flow.
+
+---
+
+## Workshop Components
+
+Attendees implemented and explored the following:
+
+* **Button** – Styled action triggers with multiple variants
+* **Dialog** – Modal popups for forms, alerts, or content
+* **Input** – Tailwind-styled text and form inputs
+* **Carousel** – Responsive image/content sliders with controls
+* **Sonner** – Toast notification system
+
+---
+
+## Working Time + Questions
+
+The second half of the workshop provided attendees with hands-on time to experiment, ask questions, and integrate Shadcn components into their ongoing project repositories.
